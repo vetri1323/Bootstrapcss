@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+ .nav-item a{
+  margin: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.navbar a{
+  font-weight: bold;
+}
+ .divdogs{
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 1px;
+  line-height: 10px;
+ }
+  section.about p{
+    width: 95%;
+     
+  }
+    
+   .row{
+    width: 100%;
+    margin-left: 1%;
+  }
+  .buy{
+    padding: 0px;
+    height: auto;
+  }
+    section.about{
+      padding-top: 100px;
+      height: auto;
+      align-content: center;
+      background-color: white;
+   }
+   .aboutimg{
+    border-radius: 50%;
+   }
+    section.product{
+      padding-top:80px;
+      padding-bottom: 50px;
+      background-color: whitesmoke;
+      font-size: 15px;
+    }
+    .card{
+    border-radius: 10px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+  }
+    section.success{
+      padding-top:5000px;
+      padding: 20px 20px;
+      height: auto;
+      background-color: brown;
+      }
+      
+    .success h2{
+        padding-top: 80px;
+        padding-bottom: 30px;
+    }
+    .contact h2{
+        padding-top: 100px;
+        padding-bottom: 20px;
+      }
+      .checked {
+      color: orange;
+    }
+    .customer-review{
+    text-align: center;
+    background-color: wheat;
+    border-radius: 10px;
+   }
+ .contact{
+  width: 100%;
+ }
+  .btnfloat{
+        width: 50px;
+        height: 50px;
+        background-color: brown;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        border-radius: 50%;
+        color: white;
+        font-size: 30px;
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+  }
+  .btnwts{
+        width: 50px;
+        height: 50px;
+        background-color: brown;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        border-radius: 50%;
+        color: white;
+        font-size: 30px;
+        position: fixed;
+        right: 20px;
+        bottom: 80px;
+  }
+ 
+
+  @media screen and (max-width:468px) {
+    .aboutimg{
+      width: 300px;
+      height: 300px;
+    }
+  .row{
+    align-items: center;
+    display: contents;
+  }
+  .row p{
+    font-size: 15px;
+    
+  }
+}
+
+</style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-danger">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#home"><img src="d1.png" height="50px" width="50px"> Saha Dog's</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#buy">BuyDogs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#success">Reviews</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+              </div>
+        </div>
+        </nav>
+  </section>
+      
+</header>
+<section class="home" id="home">
+  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="5000">
+        <img src="C1.JPG" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div> 
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="C2.JPG" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          </div>
+      </div>
+      <div class="carousel-item">
+        <img src="C3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+          
+<section class="about" id="about">
+        <div class="container1 bg-1" id="aboutsec">
+          <div class="row">
+              <div class="col-4">
+                <img src="at.jpg " class="aboutimg" style="float: left;;  " alt="" width="300" height="300">
+              </div>
+              <br>
+              <div class="col-8">
+                <h3 > Aboutus</h3>
+                <p>Welcome to Saha Dog’s Shop, your one-stop destination for everything your furry friend needs! We are passionate about dogs and dedicated to providing high-quality products, expert advice, and exceptional customer service for dog lovers everywhere.
+                  Our mission is simple: to offer the best selection of premium dog food, accessories, toys, grooming products, and more, all tailored to support the health, happiness, and well-being of your dog. Whether you're a first-time dog owner or a seasoned pro, we’re here to help make your life with your canine companion as joyful and easy as possible. </p>
+                  <b>What We Offer:</b>
+                  <P>•	Top-quality dog food: We carry a wide range of healthy, nutritious options to suit every dog's dietary needs.<br>
+                  •	Grooming & Health Products: Make grooming easy with our selection of shampoos, brushes, and health products designed to keep your dog looking and feeling their best.<br>
+                  Thank you for choosing us to be part of your dog’s journey! We look forward to meeting you and your dog.</P><br>
+                        
+              </div>
+              </div>
+                     
+          </div>
+          </div></section>
+<br>
+  <section class="product" id="buy">
+        <div class="divdogs">
+         <h4>Indian - Country Dogs</h4>
+         <Br>
+        </div>
+  
+      <div class="buy">
+        <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="Kompai.jfif" class="card-img-top" alt="..." width="150" height="200">
+                <div class="card-body">
+                  <h5 class="card-title">Kombai</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">&#8377; Rs.20,000/-</a>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="cunni.jpg" class="card-img-top" alt="..."width="150" height="200">
+                <div class="card-body">
+                  <h5 class="card-title">Cunni</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">&#8377; Rs.15,000/-</a>
+                </div>
+              </div>
+          </div><div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="sibbi.jpg" class="card-img-top" alt="..."width="150" height="200">
+                <div class="card-body">
+                  <h5 class="card-title">Sibbiparai</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">&#8377; Rs.13,000/-</a>
+                </div>
+              </div>
+          </div><div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="Raja.jfif" class="card-img-top" alt="..."width="150" height="200">
+                <div class="card-body">
+                  <h5 class="card-title">Rajapalayam</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">&#8377; Rs.12,000/-</a>
+                </div>
+              </div>
+          </div>
+           </div>
+      </div><br>
+
+      <div class="divdogs">
+        <h4>Popular Dogs</h4>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="labrador-.jpg" class="card-img-top" alt="..."width="150" height="200">
+                <div class="card-body">
+                  <h5 class="card-title">Labrador</h5>
+                  <p class="card-text">Male – Female
+
+                    Broadhead
+                    Punch face
+                    Family breed
+                    Colors: Black, Chocolate, Golden, Cream</p>
+                  <a href="#" class="btn btn-primary">&#8377; Rs.13,000/-</a>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="german-shepherd.jpg" class="card-img-top" alt="..."width="150" height="200">
+                <div class="card-body">
+                  <h5 class="card-title">German-shepherd</h5>
+                  <p class="card-text">Male – Female
+                    Short, Medium, Long coat German shepherd puppies
+                    Colors: Black, Black & Tan</p>
+                  <a href="#" class="btn btn-primary">&#8377; Rs.14,000/-</a>
+                </div>
+              </div>
+          </div><div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="rottweiler.jpg" class="card-img-top" alt="..."width="150" height="200">
+                <div class="card-body">
+                  <h5 class="card-title">Rottweiler</h5>
+                  <p class="card-text">Male – Female
+
+                    Broad head
+                    Punch face
+                    Guardian breed
+                    Family breed
+                    Colors: Black & Tan</p>
+                  <a href="#" class="btn btn-primary">&#8377; Rs.15,000/-</a>
+                </div>
+              </div>
+          </div><div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="Beagle.jpg" class="card-img-top" alt="..."width="150" height="200">
+                <div class="card-body">
+                  <h5 class="card-title">beagle</h5>
+                  <p class="card-text">Male – Female
+
+                    Full Active
+                    Family Breed
+                    Medium Breed
+                    Colors: Lemon & White, Tri-color </p>
+                  <a href="#" class="btn btn-primary">&#8377; Rs.19,000/-</a>
+                </div>
+              </div>
+          </div>
+           
+      </div>
+    </div> <br>
+    <div class="divdogs">
+      <h4>Popular Dogs</h4>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+              <img src="siberian-husky.jpg" class="card-img-top" alt="..."width="150" height="200">
+              <div class="card-body">
+                <h5 class="card-title">Siberian-husky</h5>
+                <p class="card-text">Male – Female,Double coat, Woolly coat,Family breed
+                  Colors: White, Black, Agouti</p>
+                <a href="#" class="btn btn-primary">&#8377; Rs.45,000/-</a>
+              </div>
+            </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+              <img src="pomeranian.jpg" class="card-img-top" alt="..."width="150" height="200">
+              <div class="card-body">
+                <h5 class="card-title">Pomeranian</h5>
+                <p class="card-text">Male – Female
+
+                  Punch Face
+                  Smooth and tight-fitting coat
+                  Family breed
+                  Colors: Brindle, White</p>
+                <a href="#" class="btn btn-primary">&#8377; Rs.7,000/-</a>
+              </div>
+            </div>
+        </div><div class="col">
+          <div class="card" style="width: 18rem;">
+              <img src="Boxer.jpg" class="card-img-top" alt="..."width="150" height="200">
+              <div class="card-body">
+                <h5 class="card-title">Boxer</h5>
+                <p class="card-text">Male – Female
+
+                  Punch Face
+                  Smooth and tight-fitting coat
+                  Family breed
+                  Colors: Brindle, White, Fawn, Black</p>
+                <a href="#" class="btn btn-primary">&#8377; Rs.18,000/-</a>
+              </div>
+            </div>
+        </div><div class="col">
+          <div class="card" style="width: 18rem;">
+              <img src="Pug.jpg" class="card-img-top" alt="..."width="150" height="200">
+              <div class="card-body">
+                <h5 class="card-title">Pug</h5>
+                <p class="card-text">Male – FemaleWrinkly face
+                  short-muzzled faceFamily breed
+                  Colors: Black, Fawn, Silver Fawn, Apricot</p>
+                <a href="#" class="btn btn-primary">&#8377; Rs.15,000/-</a>
+              </div>
+            </div>
+        </div>
+         
+    </div>
+  </div>
+      </div><br>
+          </section>
+
+<section class="success" id="success">
+        <h2 style="text-align: center; color: whitesmoke;">Happy Customers Review</h2> <br>
+         
+      <div class="row">
+        <div class="col-sm-2">
+          <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+            <div class="card-header">Happy Customer</div>
+            <div class="card-body">
+              <h5 class="card-title">Afzalur rahman</h5>
+              <p class="card-text">The ambiance of the shop is great the quality of my pet is really great and thanks for giving me cheap price thanks a lot !!</p>
+            </div>
+            <div class="customer-review">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-2">
+          <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+            <div class="card-header">Happy Customer</div>
+            <div class="card-body">
+              <h5 class="card-title">Alexander V</h5>
+              <p class="card-text">Last week I bought a lab puppys for these shop Treating the customers in gentle manner and having great quality of products....</p>
+            </div>
+            <div class="customer-review">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+         
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-2">
+          <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+            <div class="card-header">Happy Customer</div>
+            <div class="card-body">
+              <h5 class="card-title">Jegan</h5>
+              <p class="card-text">Small business who truly cares about your pet and providing the best for them. This place is nothing short of amazing and we are so fortunate to have them in mystic </p>
+            </div>
+            <div class="customer-review">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+   
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-2">
+          <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+            <div class="card-header">Happy Customer</div>
+            <div class="card-body">
+              <h5 class="card-title">Lakshmanan R</h5>
+              <p class="card-text">Super cool dogs,and show quality dogs are nice,good experience and guidance . Thank you guys......</p>
+            </div>
+            <div class="customer-review">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+
+              <span class="fa fa-star"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-2">
+          <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+            <div class="card-header">Happy Customer</div>
+            <div class="card-body">
+              <h5 class="card-title">HARIHARAN K</h5>
+              <p class="card-text">Quaint pet supply store in downtown. The owner seems very knowledgeable and helpful. Cute cat named Clyde resides here too.</p>
+            </div>
+            <div class="customer-review">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+    
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-2">
+          <div class="card bg-light mb-3" style="max-width: 18rem;">
+            <div class="card-header">Happy Customer</div>
+            <div class="card-body">
+              <h5 class="card-title">M Subash</h5>
+              <p class="card-text">genuinely care about people and their pets- they are both extremely knowledgeable about what they sell and they always go the extra mile for their customers Prices</p>
+            </div>
+            <div class="customer-review">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+    
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      
+      </section>
+     
+    <section class="contact" id="contact"> 
+      <h2 style="text-align: center; color:brown">Contact Us</h2> 
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <form style="width: 26rem;">
+              <!-- Name input -->
+              <div data-mdb-input-init class="form-outline mb-4">
+                <label class="form-label" for="form4Example1">Name</label>
+                <input type="text" id="form4Example1" class="form-control" />
+              </div>
+              <!-- Mobile input -->
+              <div data-mdb-input-init class="form-outline mb-4">
+                <label class="form-label" for="form4Example1">Mobile No</label>
+                <input type="text" id="form4Example1" class="form-control" />
+              </div>
+              <!-- Email input -->
+              <div data-mdb-input-init class="form-outline mb-4">
+                <label class="form-label" for="form4Example2">Email address</label>
+                <input type="email" id="form4Example2" class="form-control" />
+              </div>
+            
+              <!-- Message input -->
+              <div data-mdb-input-init class="form-outline mb-4">
+                <label class="form-label" for="form4Example3">Message</label>
+                <textarea class="form-control" id="form4Example3" rows="3"></textarea>
+               </div>
+               
+            
+              <!-- Submit button -->
+              <button data-mdb-ripple-init type="button" class="btn btn-primary btn-block mb-4">Send</button>
+            </form>
+
+          </div>
+          <div class="col-md-7">
+            <h3> Address</h3><br>
+            <h5> Saha Dog Petshop</h5>
+            <p> Kodumudi, Erode District, Tamilnadu, Erode - 638151. <br>cell: 9750049020<br>
+             email : gvcomputerkmd@gmail.com,<br> www.sahadogspets.com</p>
+            </div>
+         </div>
+         
+      
+  </div>
+      
+    </div></section>
+<br>
+
+<section class="float">
+    <a href="#home" class="btnfloat">^</a>
+ </section>
+
+ <section class="whatsapp">
+   <a href="https://web.whatsapp.com/" target="_blank" class="btnwts"><img src="whatsapp.png" height="40px" width="40px"></a>
+   
+ </section>
+ <section class="facebook">
+  <a href="https://www.facebook.com/" target="_blank" class="btnface"><img src="facebook.png" height="40px" width="40px"></a>
+  
+</section>
+<section class="instagram">
+  <a href="https://www.instagram.com/" target="_blank" class="btnins"><img src="instagram.png" height="40px" width="40px"></a>
+  
+</section>
+<section class="x">
+  <a href="https://x.com/?lang=en" target="_blank" class="btnx"><img src="twitter.png" height="40px" width="40px"></a>
+  
+</section>
+
+    <section class="footer" id="footer">
+      <footer class="bg-body-tertiary text-center">
+        <!-- Grid container -->
+        <div class="container3">
+    
+           
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2025 Copyright:
+          <a class="text-body" href="#">Sahasoftsolutions</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+    </section>
+
+</body>
+</html>
